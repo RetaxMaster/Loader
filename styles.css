@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+main {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Loader */
+
+main .loader{
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+  display: inline-block;
+  width: 20%;
+}
+
+#loading {
+  color: #696969;
+  text-align: center;
+}
+
+#loading .preloader {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 10px solid #eee;
+  border-top: 10px solid #666;
+  border-radius: 50%;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: loading;
+}
+
+#loading .tag {
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 8px;
+}
+
+@keyframes loading {
+
+  0% {
+    transform: rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+
+}
+
+/* ->Loader */
